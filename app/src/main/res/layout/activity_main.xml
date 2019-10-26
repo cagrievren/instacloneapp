@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:background="@drawable/logo"/>
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:hint="E-mail adresinizi giriniz"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/parolaText"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:hint="Şifrenizi giriniz"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/uyeolButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#DFFF9800"
+        android:onClick="uyeOl"
+        android:text="Üye Ol!" />
+
+    <Button
+        android:id="@+id/uyeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:onClick="uyeGiris"
+        android:text="Zaten üye misin?"
+        android:textAllCaps="false"
+        android:textColor="#2196F3" />
+
+</LinearLayout>

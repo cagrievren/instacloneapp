@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".GirisActivity">
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:background="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/emailText2"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:hint="E-mail adresinizi giriniz"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/parolaText2"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:hint="Parolanızı giriniz"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/girisButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#DFFF9800"
+        android:onClick="girisYap"
+        android:text="Giriş Yap!" />
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".UploadActivity">
+
+    <ImageView
+        android:id="@+id/secimView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="gonderiSec"
+        app:srcCompat="@drawable/image" />
+
+    <EditText
+        android:id="@+id/yorumText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Yorumunuzu giriniz.."
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/buttonYukle"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:onClick="yukle"
+        android:text="Yükle" />
+
+</LinearLayout>
